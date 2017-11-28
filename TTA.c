@@ -12,9 +12,10 @@ int main()
         else if(a[i]==39) printf(",");
         else if(a[i]==33) printf("!");
         else if(a[i]==63) printf("?");
+        else if(a[i]==46) printf(".");
         else
         {
-            if(a[i]<100&&a[i]!=a[0]) printf("0%d", a[i]);
+            if(a[i]<100&&!(a[i]==a[0]&&a[1]==32)) printf("0%d", a[i]);
             else printf("%d", a[i]);
         }
 
