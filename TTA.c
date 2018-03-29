@@ -3,7 +3,7 @@
 int main()
 {
     char a[1000000], n, i;
-    printf("Press Tab+Enter once you finish.\nStart writing...\n\n");
+    printf("Press Tab+Enter key once you finish.\nStart writing...\n\n");
     scanf("%[^\t]s",&a);
     n=strlen(a);
     for(i=0; i<n; i++)
